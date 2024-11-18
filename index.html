@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BF-Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form autocomplete="off">
+                        <div class="row gy-4">
+                            <div class="col-lg-12">
+                                <h2 class="fs-2 fw-bold pb-2">Müraciət et</h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Ad" autofill="off">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Soyad" autofill="off">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" placeholder="Email" autofill="off">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" placeholder="Mobil nömrə" autofill="off">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" placeholder="Şirkətiniz" autofill="off">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Vəzifəniz" autofill="off">
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea placeholder="Qeydiniz" autofill="off"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <button>Müraciət et</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="fixed ">
+        <div class="container">
+            <div class="navbar-top d-flex justify-content-between align-items-center">
+                <div class="number d-lg-flex d-none flex-column gap-3">
+                    <span>Qaynar xətt</span>
+                    <span>(+994 55) 613 91 16</span>
+                </div>
+                <div class="logo-mobile d-lg-none d-block">
+                    <a href="/">
+                        <img width="100" src="/img/bfgroup.png" alt="logo">
+                    </a>
+                </div>
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-primary online-sorgu" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fas fa-undo" aria-hidden="true"></i>
+                        <span class="registration">
+                            Onlayn Sorğu
+                        </span>
+                    </button>
+                </div>
+                <ul class="pushNav js-topPushNav">
+                    <li class="closeLevel js-closeLevelTop hdg">
+                        <i class="fa fa-close" aria-hidden="true"></i>
+                        Bağla
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fa-solid fa-house" aria-hidden="true"></i>
+                            Ana səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <div class="openLevel js-openLevel">
+                            Şirkət
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                        <ul class="pushNav pushNav_level js-pushNavLevel">
+                            <li class="closeLevel js-closeLevel hdg">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                Geri qayıt
+                            </li>
+                            <li><a href="/about/">Şirkət haqqında</a></li>
+                            <li><a href="/brends/">Brendlər</a></li>
+                            <li><a href="/karyera/">Karyera</a></li>
+                            <li><a href="/gallery/">Qalereya</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sertifikatlar/">
+                            Sertifikatlar
+                        </a>
+                    </li>
+                    <li>
+                        <div class="openLevel js-openLevel">
+                            Məhsullar
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                        <ul class="pushNav pushNav_level js-pushNavLevel">
+                            <li class="closeLevel js-closeLevel hdg">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                Geri qayıt
+                            </li>
+                            <li><a href="/#/">lorem</a></li>
+                            <li><a href="/#/">lorem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/#/">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catdirilma/">
+                            Çatdırılma
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/catalogs/">
+                            Kataloqlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blogs/">
+                            Bloqlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact/">
+                            Əlaqə
+                        </a>
+                    </li>
+                    <hr>
+                </ul>
+                <div class="ham-wrapper">
+                    <div class="burger js-menuToggle">
+                        <i class="fa fa-navicon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar p-0 navbar-expand-lg navbar-light d-none d-lg-flex">
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="forhover nav-link" href="#">
+                                <span>ŞİRKƏT</span>
+                            </a>
+                            <div class="mega-nav">
+                                <ul class="sub-menu">
+                                    <li class="nav-menu">
+                                        <a href="/about/">Şirkət haqqında</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="/brends/">Brendlər</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="/karyera/">Karyera</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="/gallery/">Qalereya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="forhover nav-link" href="/sertifikatlar/">
+                                <span>SERTİFİKATLAR</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="/products/">
+                                <span>MƏHSULLAR</span>
+                            </a>
+                            <div class="mega-nav">
+                                <ul class="sub-menu">
+                                    <li class="nav-menu">
+                                        <a href="/uniforma-istehsal/">Uniforma istehsalı</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="/all-modul-oksigen/">Ağıllı modul oksigen</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="#">Plastik fabriki</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="#">Baxıl istehsalı</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="#">Müayinə masaörtüyü</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="#">Maska istehsalı</a>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="/tibbi-avadanlqlar/">Tibbi avadanlıqlar</a>
+                                        <ul class="mega_sub_menu">
+
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/tcili-tibbi-yardm/">Təcili Tibbi
+                                                    Yardım</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/kardiologiya/">Kardiologiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/lor/">Lor</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/reanimasiya-v-anestezologiya/">Reanimasiya
+                                                    və Anestezologiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/mamalq-v-ginekologiya/">Mamalıq və
+                                                    Ginekologiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/oftalmologiya/">Oftalmologiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/fizioterapiya-v-reabilitasiya/">Fizioterapiya
+                                                    və Reabilitasiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/radiologiya/">Radiologiya</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="/products/tibbi-avadanlqlar/crrahiy/">Cərrahiyə</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="#">
+                                <span>XİDMƏTLƏR</span>
+                            </a>
+                        </li>
+                        <li class="nav-item logoimg">
+                            <a class="forhover nav-link " href="/">
+                            </a><a href="/">
+                                <img width="130" class="loqo" src="/img/bfgroup.png" alt="logo">
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="/catdirilma/">
+                                <span>ÇATDIRILMA</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="/catalogs/">
+                                <span>KATALOQLAR</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="/blogs/">
+                                <span>BLOQLAR</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="forhover nav-link" href="/contact/">
+                                <span>ƏLAQƏ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+        </div>
+    </header>
+
+    <main>
+        <section id="slider">
+            <div class="swiper" id="hero_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/baku-gotov-prinyat-uchastie-v-proekte-sozdaniya-gazovogo-haba-v-turczii-bizmedia.kz_.webp"
+                            alt="slider">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+                                    <div class="hero_content">
+                                        <h6>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, aut
+                                            fugiat!
+                                        </h6>
+                                        <div class="line-text"></div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas alias
+                                            soluta necessitatibus, maxime iste mollitia nulla minima officiis
+                                            quisquam.<br><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/baku-gotov-prinyat-uchastie-v-proekte-sozdaniya-gazovogo-haba-v-turczii-bizmedia.kz_.webp"
+                            alt="slider">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+                                    <div class="hero_content">
+                                        <h6>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, aut
+                                            fugiat!
+                                        </h6>
+                                        <div class="line-text"></div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas alias
+                                            soluta necessitatibus, maxime iste mollitia nulla minima officiis
+                                            quisquam.<br><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/baku-gotov-prinyat-uchastie-v-proekte-sozdaniya-gazovogo-haba-v-turczii-bizmedia.kz_.webp"
+                            alt="slider">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 col-lg-8 col-md-8">
+                                    <div class="hero_content">
+                                        <h6>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, aut
+                                            fugiat!
+                                        </h6>
+                                        <div class="line-text"></div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas alias
+                                            soluta necessitatibus, maxime iste mollitia nulla minima officiis
+                                            quisquam.<br><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/60363fc8c5.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

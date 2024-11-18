@@ -61,4 +61,23 @@ $(document).ready(function () {
       });
   }
   checkClasses();
+
+  $("#brands .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    dots: false,
+    nav: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
+      1200: {
+        items: 6,
+      },
+    },
+  });
 });

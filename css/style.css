@@ -429,43 +429,8 @@ hr {
     align-items: center
 }
 
-#hero_slider .swiper-slide#id-97 {
-    background: url('https://caspian-energy.az/uploads/posts/2024-05/1714552285_slider-2.webp') center/cover;
-}
-
-#hero_slider .swiper-slide#id-98 {
-    background: url('https://caspian-energy.az/uploads/posts/2024-05/1714552977_1707742177_img_599022-1.webp') center/cover;
-}
-
-#hero_slider .swiper-slide#id-107 {
-    background: url('https://caspian-energy.az/uploads/posts/2024-05/1714552791_slider-1-1.webp') center/cover;
-}
-
-#hero_slider .swiper-slide::nth-child(4) {
-    background: url('https://caspian-energy.az/uploads/posts/2024-05/1714552285_slider-2.webp') center/cover;
-}
-
-@media only screen and (max-width: 768px) {
-    #hero_slider .swiper-slide#id-97 {
-        background: url('https://caspian-energy.az/uploads/posts/2024-05/medium/1715005241_1714552285_slider-2-1-1.webp') center/cover;
-    }
-
-    #hero_slider .swiper-slide#id-97 {
-        background: url('https://caspian-energy.az/uploads/posts/2024-05/1715006457_1714552977_1707742177_img_599022-1-1.webp') center/cover;
-    }
-
-    #hero_slider .swiper-slide#id-107 {
-        background: url('https://caspian-energy.az/uploads/posts/2024-05/1715006489_1714552791_slider-1-1-1.webp') center/cover;
-    }
-
-    #hero_slider .swiper-slide::nth-child(4) {
-        background: url('https://caspian-energy.az/uploads/posts/2024-05/1714552285_slider-2.webp') center/cover;
-    }
-}
-
 #breadcrumb_section img,
-#hero_slider .swiper-slide img,
-#hero_slider .swiper-slide amp-img {
+#hero_slider .swiper-slide img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -716,6 +681,360 @@ hr {
 #brands .owl-carousel {
     width: calc(100% - 145px);
     margin: 0 auto;
+}
+
+#saheler {
+    padding-top: 2rem;
+}
+
+.sahe_card_all {
+    background-color: #009fe3;
+    padding: 50px;
+    min-height: 550px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sahe_card_all h4 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.sahe_card_all h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sahe_card_all p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.sahe_card_all a {
+    border-radius: 60px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    width: fit-content;
+    transition: .7s all ease;
+    border: 1px solid transparent;
+}
+
+.sahe_card_all a:hover {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.sahe_card,
+.sahe_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sahe_card img {
+    height: 470px;
+    width: 100%;
+    object-fit: cover;
+    transition: .7s all ease;
+}
+
+.sahe_card h4 {
+    font-size: 17px;
+    color: #979797;
+}
+
+.sahe_card h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.sahe_card i {
+    font-size: 30px;
+    color: #009fe3;
+}
+
+.sahe_card:hover img {
+    filter: brightness(70%) contrast(109%) saturate(101%) blur(0px) hue-rotate(6deg);
+}
+
+#partnors {
+    padding: 2rem 0;
+}
+
+#partnors .partnor_title {
+    margin-bottom: 31px;
+}
+
+.partnor_title {
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.partnor_title::before {
+    top: 0;
+    left: 0;
+    border-top: 3px solid #009fe3;
+}
+
+.partnor_title::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #009fe3;
+}
+
+.partnor_title::before,
+.partnor_title::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    position: absolute;
+}
+
+.partnors_row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0 -4px;
+}
+
+.partnors_row div {
+    width: calc(12.5% - 8px);
+    margin: 4px;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.partnors_row div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transition: all 0.225s ease 0s;
+    transition: all 0.225s ease 0s;
+    padding: 16px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.partnors_row div:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+#call-to-action {
+    padding: 36px 0;
+    background-color: #eee;
+}
+
+#call-to-action .content_area {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 60px 80px;
+}
+
+#call-to-action .call_to_action_content h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-weight: 900;
+    color: #000;
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+#call-to-action .forms_textarea textarea,
+.forms_input input {
+    display: block;
+    min-height: 56px;
+    padding: 17px 18px;
+    color: #000;
+    opacity: .6;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f7f7f5;
+    outline: 0;
+    width: 100%;
+    font-family: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#call-to-action .call_to_action_content h3 img {
+    width: 50px;
+    height: 50px
+}
+
+#call-to-action .call_to_action_content p {
+    margin-top: 50px
+}
+
+#call-to-action .forms_area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px
+}
+
+#call-to-action .forms_area .forms_textarea {
+    position: relative;
+    width: 100%
+}
+
+#call-to-action .forms_textarea textarea {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    max-height: 200px;
+    resize: vertical
+}
+
+.call_label {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #000;
+    font-size: 12px;
+    line-height: 1;
+    opacity: .9;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    pointer-events: none
+}
+
+.forms_btn, .forms_input, .forms_textarea {
+    padding: 0 10px;
+}
+
+.forms_input {
+    width: 100%;
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.forms_input input {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color .2s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+#call-to-action .forms_textarea textarea:focus+.call_label,
+#call-to-action .forms_textarea textarea:valid+.call_label {
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    width: 100%
+}
+
+#call-to-action .forms_input input:focus+.call_label,
+#call-to-action .forms_input input:valid+.call_label {
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    width: 100%
+}
+
+.forms_btn {
+    width: 100%;
+    flex: 0 0 50%;
+}
+
+.forms_btn button {
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #009fe3 0%, #009fe3 100%);
+    color: #fff;
+    padding: .8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transition: .3s
+}
+
+.forms_btn button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .3)
+}
+
+.forms_btn button:active {
+    transform: scale(.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2)
+}
+
+.forms_btn button span {
+    display: block;
+    transition: .3s
+}
+
+.forms_btn button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: .3s
+}
+
+.forms_btn button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    margin-right: .5em;
+    transition: .3s
+}
+
+.forms_btn button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, .5)
+}
+
+.forms_btn button:hover svg {
+    transform: rotate(45deg)
+}
+
+@media screen and (max-width: 1199.99px) {
+    .partnors_row div {
+        width: calc(16.6% - 8px);
+    }
 }
 
 @media screen and (max-width: 991px) {

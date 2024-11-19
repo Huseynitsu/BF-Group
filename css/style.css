@@ -1019,6 +1019,148 @@ hr {
 
 /* services end */
 
+/* faq */
+
+#faq {
+    padding: 2rem 0;
+}
+
+.faq_title {
+    padding-bottom: 60px;
+}
+
+.faq_title span {
+    color: #009fe3;
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+
+.faq_title h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.faq_both {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.faq_left .accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.faq_left .accordion-item {
+    box-shadow: 0px 10px 10px rgba(198, 198, 198, 0.19);
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.faq_left .accordion-button {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 22px 25px;
+    color: #1c1c1c;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.faq_left .accordion-button::after {
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    content: "\f067";
+    background-image: none;
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #1c1c1c;
+}
+
+.faq_left .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    transform: rotate(0);
+}
+
+.faq_left .accordion-button:not(.collapsed) {
+    color: #009fe3;
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.faq_left .accordion-body {
+    padding: 22px 25px;
+}
+
+.faq_left .accordion-body p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 1.83;
+}
+
+.faq_left .accordion-button:focus {
+    border-color: none;
+    box-shadow: none !important;
+}
+
+.faq-img-wrap {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.faq-img-wrap img:nth-child(1) {
+    border-radius: 12px;
+    width: 332px;
+    height: 628px;
+    object-fit: cover;
+}
+
+.faq-img-wrap img:nth-child(2) {
+    border-radius: 12px 80px 12px 12px;
+    width: 332px;
+    height: 628px;
+    object-fit: cover;
+}
+
+.faq-img-wrap .overlay-text {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 65px;
+    padding: 28px 25px;
+    width: 460px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.faq-img-wrap .overlay-text .title {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0f1437;
+    margin-bottom: 0;
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: .8;
+}
+
+/* faq end */
+
 /* brend */
 
 #brands,

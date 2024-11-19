@@ -938,6 +938,87 @@ hr {
 
 /* about end */
 
+/* services */
+
+#services {
+    padding: 3.5rem 0 2rem 0;
+}
+
+.services_title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.services_img {
+    height: 280px;
+}
+
+.services_item img {
+    width: 100%;
+    height: 100%;
+}
+
+.services_text {
+    padding: 20px 34px 37px;
+    background-color: #fff;
+    border: 1px solid #e8e8e9;
+    border-bottom: 4px solid #009fe3;
+}
+
+.services_text small {
+    font-size: 12px;
+    line-height: 2.33em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #565969;
+}
+
+.services_text h3 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #000;
+    transition: .5s all ease;
+}
+
+.services_item:hover .services_text h3 {
+    color: #009fe3;
+}
+
+.services_text span:not(.plus) {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 1rem;
+    font-size: 16px;
+    color: #000;
+}
+
+.plus {
+    font-size: 24px;
+    padding: 9px 20px 11px;
+    display: inline-block;
+    background-color: #fff;
+    transition: .5s all ease;
+    color: #000;
+}
+
+.services_item:hover .plus {
+    background-color: #009fe3;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px 0 rgba(28, 135, 152, 0.5);
+    color: #fff;
+}
+
+/* services end */
+
 /* brend */
 
 #brands,

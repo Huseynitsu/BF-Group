@@ -669,6 +669,10 @@ hr {
     line-height: unset !important;
 }
 
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner {
+    overflow: visible;
+}
+
 .adv_numbers span {
     font-size: 60px;
     color: #009fe3;
@@ -712,7 +716,7 @@ hr {
 @media screen and (min-width: 1400px) {
     .about_both {
         grid-template-columns: 1fr 1fr;
-    }    
+    }
 }
 
 .about_left span i {
@@ -737,12 +741,21 @@ hr {
     font-weight: 600;
 }
 
-.about_left p {
+.about_left p:not(.about-tab-text) {
     margin: 20px 0;
     font-size: 15px;
-    margin-top: 23px;
     line-height: 1.667;
     color: #737373;
+}
+
+.about-tab-text {
+    font-size: 15px;
+    line-height: 1.667;
+    color: #737373;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }
 
 .filter-menu-active {
@@ -798,14 +811,24 @@ hr {
 
 .filter-active-cat1 {
     position: relative;
-}
-
-.filter-item.active {
-    display: block;
+    min-height: 100px;
 }
 
 .filter-item {
-    display: none;
+    display: block;
+    opacity: 0;
+    transform: scale(0.8) translateZ(0);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.filter-item.active {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+    z-index: 1;
 }
 
 .about_left a {
@@ -1594,7 +1617,7 @@ footer .social-ul a:hover {
     }
 
     .about_both {
-        grid-template-columns: 1fr  ;
+        grid-template-columns: 1fr;
     }
 }
 

@@ -90,7 +90,7 @@ $(document).ready(function () {
     // İlgili içerik filtreleme
     const filter = $(this).data("filter");
     $(".filter-item").removeClass("active");
-    $(filter).addClass("active");
+    $(`.filter-item${filter}`).addClass("active");
   });
 
   $("#brands .owl-carousel").owlCarousel({

@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const odometerEl = entry.target.querySelector(".odometer");
+        const value = odometerEl.getAttribute("data-value");
+        odometerEl.innerHTML = value;
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, {
+    threshold: 0.5,
+  });
+
+  document
+    .querySelectorAll(".adv_card")
+    .forEach((card) => observer.observe(card));
+});
+
 $(document).ready(function () {
   let $menuTrigger = $(".js-menuToggle");
   let $topNav = $(".js-topPushNav");
@@ -61,6 +82,16 @@ $(document).ready(function () {
       });
   }
   checkClasses();
+
+  $(".filter-menu-active button").on("click", function () {
+    $(".filter-menu-active button").removeClass("active");
+    $(this).addClass("active");
+
+    // İlgili içerik filtreleme
+    const filter = $(this).data("filter");
+    $(".filter-item").removeClass("active");
+    $(filter).addClass("active");
+  });
 
   $("#brands .owl-carousel").owlCarousel({
     loop: true,
